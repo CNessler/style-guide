@@ -31,7 +31,22 @@ time, mark, audio, video {
   float: right; }
 
 .imgback {
-  background-image: url("http://www.splitshire.com/wp-content/uploads/2015/06/SplitShire-5466-420x420-420x420.jpg"); }
+  position: relative;
+  overflow: hidden; }
+
+.imgback p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin: 5px; }
+
+.imgback img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.8; }
 
 .row {
   width: 100%; }
@@ -54,7 +69,7 @@ body {
   font-family: 'Open Sans', serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #333; }
+  color: #307FA7; }
 
 p {
   margin-bottom: 1.3em; }
@@ -63,7 +78,8 @@ h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  font-family: 'Philosopher'; }
+  font-family: 'Philosopher';
+  color: #DF6955; }
 
 h1 {
   margin-top: 0;
@@ -79,7 +95,8 @@ h4 {
   font-size: 1.414em; }
 
 h5, h6 {
-  font-weight: bolder; }
+  font-weight: bolder;
+  color: #DF6955; }
 
 small, .font_small {
   font-size: 0.707em; }
@@ -100,9 +117,6 @@ tbody {
 .top {
   display: inline-block; }
 
-fieldset {
-  display: inline; }
-
 form {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -110,12 +124,12 @@ form {
   width: 40%;
   padding-top: 20px;
   padding-bottom: 5px; }
-
-.input {
-  line-height: 1.7; }
-
-.text, .gender {
-  padding-right: 10px; }
+  form fieldset {
+    display: inline; }
+  form .input {
+    line-height: 1.7; }
+  form .text, form .gender {
+    padding-right: 10px; }
 
 .country {
   font-size: 14px; }
